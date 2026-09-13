@@ -14,7 +14,7 @@ Registrar un candidato no autoriza su instalación. El orden de esta lista no co
 | ECC | [Issue #5](https://github.com/bobymor1-dev/hermes-component-radar/issues/5) | REVISAR. Integración Hermes documentada; sin validación local confirmada. | Recuperar alcance acordado y seleccionar una capacidad para el piloto. |
 | Speaches | [Issue #6](https://github.com/bobymor1-dev/hermes-component-radar/issues/6) | REVISAR. Servicio externo de voz; integración local no confirmada. | Recuperar cierre de VOZ HERMES -01 e identificar una carencia de la voz nativa. |
 | DonSeTch | [Issue #7](https://github.com/bobymor1-dev/hermes-component-radar/issues/7) | PROBAR. Sustituye a Hound, abandonado; sin validación local. | Comprobar requisitos y preparar una prueba de búsqueda y lectura en una fuente real del radar. |
-| i-have-adhd | Pendiente | Candidato revisado anteriormente. | Confirmar identidad exacta y resultado de la revisión. |
+| i-have-adhd | [Issue #9](https://github.com/bobymor1-dev/hermes-component-radar/issues/9) | REVISAR. Skill Hermes documentada; sin validación local confirmada. | Comprobar si mejora las instrucciones actuales mediante una prueba de sesión. |
 | Superpowers | Pendiente | Candidato identificado anteriormente. | Recuperar enlace exacto y alcance de la revisión realizada. |
 | jCodeMunch | Pendiente | Incluido en el inventario conceptual anterior. | Confirmar fuente, función y utilidad para una necesidad real. |
 | jDocMunch | Pendiente | Incluido en el inventario conceptual anterior. | Confirmar fuente, función y utilidad para una necesidad real. |
