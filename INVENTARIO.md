@@ -1,4 +1,4 @@
-# Inventario inicial del radar
+Uy# Inventario inicial del radar
 
 Este archivo conserva los candidatos recuperados del diseño anterior y enlaza sus fichas. Los Issues son el registro detallado de evaluación, pruebas y decisiones.
 
@@ -9,7 +9,7 @@ Registrar un candidato no autoriza su instalación. El orden de esta lista no co
 | Candidato | Ficha | Situación al trasladarlo | Siguiente acción documental |
 |---|---|---|---|
 | jMunch MCP | [Issue #1](https://github.com/bobymor1-dev/hermes-component-radar/issues/1) | PROBAR. Precheck documental provisional; sin validación práctica en Hermes. | Confirmar fuente original antes del piloto. |
-| LLM-Wiki | Pendiente | Existen pruebas previas; la auditoría posterior de Misión Real 03 terminó en PARTIAL. No asumir adopción estable. | Recuperar resultados y carencias antes de asignar estado. |
+| LLM-Wiki | [Issue #2](https://github.com/bobymor1-dev/hermes-component-radar/issues/2) | REVISAR. Auditoría previa PARTIAL; adopción estable no confirmada. | Recuperar fuente y artefactos; comprobar si las carencias siguen pendientes. |
 | Ponytail | Pendiente | Candidato considerado junto con ECC; prioridad anterior provisional. | Confirmar repositorio y propuesta aceptada en su chat. |
 | ECC | Pendiente | Candidato considerado para capacidades de construcción. | Recuperar identidad exacta, alcance y encaje con Agente 0. |
 | Speaches | Pendiente | Candidato de voz; integración práctica pendiente de confirmar. | Recuperar las conclusiones de VOZ HERMES -01 y comprobar qué necesidad sigue sin cubrirse. |
