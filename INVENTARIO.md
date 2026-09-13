@@ -10,8 +10,8 @@ Registrar un candidato no autoriza su instalación. El orden de esta lista no co
 |---|---|---|---|
 | jMunch MCP | [Issue #1](https://github.com/bobymor1-dev/hermes-component-radar/issues/1) | PROBAR. Precheck documental provisional; sin validación práctica en Hermes. | Confirmar fuente original antes del piloto. |
 | LLM-Wiki | [Issue #2](https://github.com/bobymor1-dev/hermes-component-radar/issues/2) | REVISAR. Auditoría previa PARTIAL; adopción estable no confirmada. | Recuperar fuente y artefactos; comprobar si las carencias siguen pendientes. |
-| Ponytail | [Issue #3](https://github.com/bobymor1-dev/hermes-component-radar/issues/3) | REVISAR. Plugin nativo Hermes documentado; funcionamiento local no confirmado. | Recuperar alcance acordado y comprobar requisitos antes del piloto. | |
-| ECC | Pendiente | Candidato considerado para capacidades de construcción. | Recuperar identidad exacta, alcance y encaje con Agente 0. |
+| Ponytail | [Issue #3](https://github.com/bobymor1-dev/hermes-component-radar/issues/3) | REVISAR. Plugin nativo Hermes documentado; funcionamiento local no confirmado. | Recuperar alcance acordado y comprobar requisitos antes del piloto. |
+| ECC | [Issue #5](https://github.com/bobymor1-dev/hermes-component-radar/issues/5) | REVISAR. Integración Hermes documentada; sin validación local confirmada. | Recuperar alcance acordado y seleccionar una capacidad para el piloto. |
 | Speaches | Pendiente | Candidato de voz; integración práctica pendiente de confirmar. | Recuperar las conclusiones de VOZ HERMES -01 y comprobar qué necesidad sigue sin cubrirse. |
 | Hound | Pendiente | Mencionado y revisado en un chat anterior. | Recuperar fuente original y conclusión documental. |
 | i-have-adhd | Pendiente | Candidato revisado anteriormente. | Confirmar identidad exacta y resultado de la revisión. |
