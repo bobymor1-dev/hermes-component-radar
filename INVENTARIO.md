@@ -1,4 +1,4 @@
-Uy# Inventario inicial del radar
+# Inventario inicial del radar
 
 Este archivo conserva los candidatos recuperados del diseño anterior y enlaza sus fichas. Los Issues son el registro detallado de evaluación, pruebas y decisiones.
 
