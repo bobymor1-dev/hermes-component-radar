@@ -18,7 +18,7 @@ Registrar un candidato no autoriza su instalación. El orden de esta lista no co
 | Superpowers | [Issue #10](https://github.com/bobymor1-dev/hermes-component-radar/issues/10) | REVISAR. Plugin Hermes documentado; sin validación local confirmada. | Comprobar requisitos y encaje con el método antes de un piloto de construcción o depuración. |
 | jCodeMunch | [Issue #12](https://github.com/bobymor1-dev/hermes-component-radar/issues/12) | RESERVA. Evaluación e instalación pospuestas por falta de utilidad actual. | Retomar solo ante una necesidad concreta de exploración o depuración de código. |
 | jDocMunch | [Issue #11](https://github.com/bobymor1-dev/hermes-component-radar/issues/11) | REVISAR. Consulta documental por secciones mediante MCP; sin validación local. | Identificar una carencia real al consultar Wiki Cerebro o documentación antes del piloto. |
-| jDataMunch | Pendiente | Incluido en el inventario conceptual anterior. | Confirmar fuente, función y utilidad para una necesidad real. |
+| jDataMunch | [Issue #13](https://github.com/bobymor1-dev/hermes-component-radar/issues/13) | RESERVA. Posible utilidad para presupuesto personal; sin validación local. | Retomar solo si mejora el análisis del presupuesto frente a las herramientas actuales. |
 | Constructor de agentes/subagentes | Pendiente | Necesidad o capacidad propuesta; no identifica por sí sola un repositorio. | Recuperar el alcance acordado y comprobar si requiere un componente específico. |
 | Penpot | Pendiente | Repositorio aportado anteriormente: https://github.com/penpot/penpot | Recuperar la evaluación previa antes de decidir su prioridad para Hermes. |
 
