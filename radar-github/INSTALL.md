@@ -48,11 +48,6 @@ este repositorio.**
 
    Debe terminar en `OK` con 133 pruebas.
 
-   Ejecuta la batería en una **ubicación neutral** (por ejemplo, una copia en un
-   directorio temporal): dentro de un clon de este repositorio una de las 133
-   pruebas falla por aislamiento del entorno, no por un fallo de la skill. El
-   motivo está explicado en «Límites conocidos».
-
 3. Copia el árbol completo al directorio de skills del perfil de Hermes, como
    `radar-github/`:
 
@@ -119,17 +114,6 @@ aprobación humana.
 
 ## Límites conocidos
 
-- **Una prueba depende de su ubicación.** `resolve_inventory_path()` busca
-  `INVENTARIO.md` en el directorio actual, dos niveles por encima de `scripts/` y un
-  nivel por encima (`scripts/radar_github.py` → `parents[2]`, `parents[1]`). Dentro
-  de un clon de este repositorio, `parents[2]` es la raíz del clon y contiene el
-  `INVENTARIO.md` del registro, así que la detección lo encuentra —correctamente—
-  y la prueba
-  `test_dedupe_safety.ResolveInventoryPathTests.test_none_when_nothing_found`, que
-  presupone que no hay nada que encontrar, falla. Resultado real medido:
-  `133/133 OK` en la ubicación de instalación y en un directorio neutral,
-  `132/133` dentro del clon. Es una limitación de aislamiento de esa prueba, no un
-  fallo de la skill.
 - **Un veredicto no concluyente no es un "no existe".** Si no se puede consultar el
   inventario o los Issues, el resultado es `indeterminate`, nunca `not_found`.
 - **La búsqueda de Issues es full-text** y encuentra palabras en el cuerpo de fichas
