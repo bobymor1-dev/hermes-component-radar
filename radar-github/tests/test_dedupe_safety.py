@@ -14,12 +14,14 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 
 SCRIPTS = Path(__file__).resolve().parents[1] / "scripts"
 FIXTURE = Path(__file__).resolve().parent / "fixtures" / "INVENTARIO.md"
 sys.path.insert(0, str(SCRIPTS))
 
+import radar_github  # noqa: E402
 from radar_github import (  # noqa: E402
     MIN_NAME_LENGTH,
     RadarGitHubError,
@@ -385,13 +387,32 @@ class ResolveInventoryPathTests(unittest.TestCase):
     def test_none_when_nothing_found(self):
         previous = os.environ.pop("RADAR_INVENTORY", None)
         cwd = os.getcwd()
-        os.chdir("/")
-        try:
-            self.assertIsNone(resolve_inventory_path())
-        finally:
-            os.chdir(cwd)
-            if previous is not None:
-                os.environ["RADAR_INVENTORY"] = previous
+        # Two of the three candidates are derived from the module location
+        # (``parents[2]`` and ``parents[1]``), not from the working directory, so
+        # changing directory alone cannot rule them out: inside a clone of the
+        # registry, ``parents[2]`` is the clone root and holds its INVENTARIO.md.
+        # The tree is therefore built three levels deep inside a temporary
+        # directory, so that every candidate -- cwd included -- lands in a place
+        # we control and know to be empty.
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            isolated_module = root / "a" / "b" / "scripts" / "radar_github.py"
+            isolated_module.parent.mkdir(parents=True)
+            isolated_cwd = isolated_module.parents[1] / "c"
+            isolated_cwd.mkdir(parents=True)
+            try:
+                os.chdir(str(isolated_cwd))
+                with mock.patch.object(radar_github, "__file__", str(isolated_module)):
+                    self.assertEqual(
+                        list(root.rglob("INVENTARIO.md")),
+                        [],
+                        "the isolated tree must contain no INVENTARIO.md at all",
+                    )
+                    self.assertIsNone(resolve_inventory_path())
+            finally:
+                os.chdir(cwd)
+                if previous is not None:
+                    os.environ["RADAR_INVENTORY"] = previous
 
     def test_finds_inventory_in_cwd(self):
         previous = os.environ.pop("RADAR_INVENTORY", None)
