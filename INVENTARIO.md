@@ -21,7 +21,7 @@ Registrar un candidato no autoriza su instalación. El orden de esta lista no co
 | jDataMunch | [Issue #13](https://github.com/bobymor1-dev/hermes-component-radar/issues/13) | RESERVA. Posible utilidad para presupuesto personal; sin validación local. | Retomar solo si mejora el análisis del presupuesto frente a las herramientas actuales. |
 | Constructor de agentes/subagentes | Pendiente | Necesidad o capacidad propuesta; no identifica por sí sola un repositorio. | Recuperar el alcance acordado y comprobar si requiere un componente específico. |
 | Penpot | Pendiente | Repositorio aportado anteriormente: https://github.com/penpot/penpot | Recuperar la evaluación previa antes de decidir su prioridad para Hermes. |
-
+| Newsjack | [Issue #15](https://github.com/bobymor1-dev/hermes-component-radar/issues/15) | RESERVA. Componente sano (MIT, activo) sin necesidad demostrada en nuestro alcance; la parte útil (vigilancia de noticias) ya está cubierta de forma nativa. | Retomar solo ante una necesidad concreta de prensa o comunicación, o de vigilancia que las skills nativas no cubran. |
 ## Cómo completar el registro
 
 1. Elegir un candidato pendiente.
